@@ -5,7 +5,7 @@ include "conn.php";
 
 
 //2.查询渲染数据
-$result=$conn->query("select * from shoplist"); //获取所有的数据
+$result = $conn->query("select * from registry"); //获取所有的数据
 $num = $result->num_rows; //记录集的总条数   40
 
 

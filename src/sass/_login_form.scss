@@ -1,0 +1,44 @@
+@import "logo";
+@import "img";
+@import "login_const";
+$login_cent_h: 600px;
+$login_login_w: 350px;
+$login_login_h: 315px;
+$login_cent_bc: rgb(248,248,248);
+$login_login_bc: #fff;
+$login_login_border_color: rgb(234,234,234);
+$login_login_input_border_color: rgb(213,213,213);
+$login_login_input_font_color: rgb(51,51,51);
+$login_login_input_sfont_color: rgb(153,153,153);
+$login_login_input_dl_color: rgb(255,50,52);
+$login_login_content_w: 275px;
+$login_login_content_h: 280px;
+.login_center {
+    background-color: $login_cent_bc;
+    height: $login_cent_h;
+    .login_center_centent {
+        position: relative;
+        margin: 0 auto;
+        width: $login_mediate_w;
+        height: $login_cent_h;
+    }
+}
+.login_form {
+    border: $login_login_border_color 1px solid;
+    background-color: $login_login_bc;
+    width: $login_login_content_w;
+    height: $login_login_content_h;
+    padding: ($login_login_h - $login_login_content_h) (($login_login_w - $login_login_content_w) / 2) 0;
+    position: absolute;
+    top: 110px;
+    left: 600px;
+    .login_form_title {
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .login_form_switch {
+        font-size: 12px;
+        text-align: right;
+    }
+}

@@ -6,8 +6,8 @@ header('content-type:text/html;charset=utf-8'); //设置中文编码。
 //1.定义几个数据库连接的常量
 define('HOST','localhost');//主机名
 define('USERNAME','root');//用户名
-define('PASSWORD','root');//密码
-define('DBNAME','data2012');//数据库名称
+define('PASSWORD','root'); //密码
+define('DBNAME', 'wangyikaola');//数据库名称
 
 $conn = @new mysqli(HOST,USERNAME,PASSWORD,DBNAME);//连接成功，没有提示的。
 //@符号用来做容错处理，让错误不显示(慎用)

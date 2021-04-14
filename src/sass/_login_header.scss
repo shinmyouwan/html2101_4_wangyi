@@ -1,0 +1,29 @@
+@import "logo";
+@import "img";
+@import "login_const";
+$login_header_bc_color: rgb(255,255,255);
+$login_header_border_color: rgb(232,232,234);
+
+.login_header {
+    background-color: $login_header_bc_color;
+    border: $login_header_border_color solid;
+    border-width: 0px 0px 1px;
+    .login_header_centent {
+        margin: 0 auto;
+        width: $login_mediate_w;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            width: 215px;
+            height: 65px;
+            background: url($logo_kaola_big) no-repeat;
+        }
+        div {
+            width: 504px;
+            height: 100px;
+            background: url($img_zheng_quan_tian) no-repeat;
+        }
+    }
+}
