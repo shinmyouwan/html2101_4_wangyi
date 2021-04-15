@@ -25,3 +25,17 @@ font-size: 12px;
 li {
 list-style: none;
 }
+input {
+    outline:none;
+}
+i {
+    font-style: normal;
+}
+.clear::after{
+    content:'.';
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+    clear:both;
+}

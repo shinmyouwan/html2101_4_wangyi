@@ -13,15 +13,14 @@ if (!isset($_POST['tel'])) {
     $tel = $_POST['tel'];
     $yzm = $_POST['yzm'];
     if (strtolower($_SESSION["captcha"]) == strtolower($yzm)) {
-        $result = $conn->query("select * from registry where username='$tel'");
+        $result = $conn->query("select * from registry where tel='$tel'");
         if ($result->fetch_assoc()) {
             echo 101;
         } else {
-            $conn->query("insert into registry value(null,'wy','$tel',null,null,NOW())");
+            $conn->query("insert into registry value(null,'wy',null,'$tel',NOW())");
             echo 100;
         }
     } else {
         echo 11;
     }
 }
-$_SESSION["captcha"] = ""; // 设置验证码为空, 前端重新请求更新
