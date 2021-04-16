@@ -1,0 +1,88 @@
+
+git status
+git add .
+git commit -m "提交的注释"
+git push origin master
+git pull origin master       
+ 一.git操作
+        1.版本管理的发展：CVS --  SVN  --  GIT;
+        2.git 是一个分布式的版本控制系统，在Git中即使用户离线，也能进行项目的提交和更新操作（本地服务器），等到下次连线中央服务器时进行整体的同步操作。
+        3.新建远程仓库(中央服务器) - github
+
+        4.将本地代码托管到远程仓库的步骤
+        第一步：克隆仓库，将远程仓库克隆到本地。
+        两种格式的地址：https、ssh
+        https:每次提交都需要输入用户名和密码。
+
+        本地工作区--(git add)--本地暂存区--(git commit)--本地服务器--(git push)--远程仓库(github)
+
+
+        第二步：配置用户名(英文的)和邮箱(please tell me who your are)
+        git config --global user.name  "用户名"
+        git config --global user.email  "你的邮箱"
+        git config --list 查看是否配置成功
+
+        git clone 仓库的地址，
+        
+        进入仓库目录，cd 目录名称(目录名称可以tab键补全)
+        git status 对比本地和远程仓库   
+        git add .  将所有改变的文件提交到暂存区。
+        git commit -m "提交的注释"    将暂存区的文件提交到本地服务器
+        git push origin main  提交到中央服务器  (origin:远程仓库的名称，main:主分支)
+        git pull origin main  更新中央服务器代码
+
+
+        第三步：ssh地址进行通信
+        当采用https地址进行通信时，每次都需要输入用户名和密码，那我们可以采用ssh地址进行通信
+        配置下面信息之前，一定要先配置用户名和邮箱
+        git config --global user.name  "用户名"
+        git config --global user.email  "你的邮箱"
+        git config --list 查看是否配置成功
+
+        1.配置ssh
+        任意目录输入如下命令：ssh-keygen -t rsa -C  "你的邮箱"   --回车直到结束。生成ssh
+
+        2.码云或者github网站设置ssh
+        复制ssh生成的公钥文件(id_rsa.pub)里面的内容,进入对应的网站
+         - 进入github网站---点击右上角小图片---settings---左侧菜单SSH and GPG keys
+         - 码云设置方式和上面一致
+
+
+        二.项目托管
+        1.刚进入项目组，本地没有项目目录，直接克隆远程仓库，将仓库的名称当做项目目录。
+            - git clone ssh地址(第一次克隆，后面每一次都是更新)
+            - git status
+            - git add .
+            - git commit -m ""
+            - git push origin 分支地址
+
+            创建分支：项目管理者操作的。
+            创建分支：git branch 分支名称
+            查看分支：git branch
+            切换分支：git checkout 分支名称
+            分支合并：git merge 分支名称
+
+
+            回滚代码(出现了错误的操作，回到某个版本状态)
+            git log查看提交日志，如果日志显示不全，通过回车键逐步显示所有的提交日志，q键退出。
+            git reset --hard commit_id    退到/进到哪一个次提交操作   指定commit_id的随机的哈希值
+            git push origin head --force  强推到远程仓库(中央服务器)
+
+
+            冲突：解决方式就是协商解决，一方提交，另外一方更新。
+
+        2.项目已经开放的差不了，直接将我当前的项目变成远程仓库。(项目名称和远程仓库的名称不同)
+            - 将任意目录直接变成远程仓库，无需克隆的指令。
+            - 第一步：初始化   git init
+            - 第二步：将本地目录的内容提交到暂存区   git  add .
+            - 第三步：提交到本地服务器  git commit -m ""
+            - 第四步：链接远程仓库 git remote add origin ssh地址
+            - 第五步：更新远程仓库里面的内容  git pull --rebase origin master
+            - 第六步：将本地内容同步到远程仓库  git push -u origin master
+
+            后续的提交等操作和上面普通提交的操作一致
+            - git status 对比本地和远程仓库   
+            - git add .  将所有改变的文件提交到暂存区。
+            - git commit -m "提交的注释"    将暂存区的文件提交到本地服务器
+            - git push origin master  提交到中央服务器  (origin:远程仓库的名称，main:主分支)
+            - git pull origin master  更新中央服务器代码

@@ -1,0 +1,52 @@
+.detail_centent_bc {
+    background-color: rgb(243,243,243);
+    .detail_centent {
+        width: 1090px;
+        margin: 10px auto;
+        background-color: #fff;
+
+    }
+}
+.product_head {
+    display: flex;
+    justify-content: space-between;
+    .product_img {
+        width: 400px;
+        height: 488px;
+        .product_img_box {
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+        .product_simg {
+            
+        }
+    }
+    .product_msg {
+        width: 658px;
+        .product_title {
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 26px;
+            color: rgb(51,51,51);
+            margin: 26px;
+        }
+        .product_price {
+            background-color: rgb(249,249,249);
+            box-sizing: border-box;
+            height: 76px;
+            padding: 12px;
+            border: rgb(221,221,221) dotted;
+            border-width: 1px 0px;
+            display: flex;
+        }
+        
+        .product_tl {
+            width: 85px;
+            box-sizing: border-box;
+            padding: 0 0 0 10px;
+            float: left;
+        }
+    }
+}

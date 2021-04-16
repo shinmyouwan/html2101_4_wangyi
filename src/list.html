@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>搜索-考拉海购</title>
-    <script type="module" src="http://10.31.157.37/src/script/main.js" class="list"></script>
+    <script type="module" src="http://10.31.157.37/src/script/main.js" id="list"></script>
     <link rel="stylesheet" href="http://10.31.157.37/src/css/list.css">
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <link rel="stylesheet" href="http://10.31.157.37/src/css/pagination.css">
 </head>
 <body>
-    <div style="height: 2000px; background-color: #111;"></div>
+    <!-- <div style="height: 2000px; background-color: #111;"></div> -->
     <div class="list_centent_bc">
         <div class="list_centent">
+            <div class="goods_sort clear">
+                <div class="goods_sort_btn">
+                    <input type="button" class="goods_sort_btn_act goods_sort_btn_def" name="" value="默认" id="">
+                </div>
+                <div class="goods_sort_btn">
+                    <input type="button" class="goods_sort_btn_price" name="" value="价格" id="">
+
+                </div>
+            </div>
             <ul class="list_goods clear">
-                
-                <li class="li_goods">
+                <!-- <li class="li_goods">
                     <div class="goods_wrap">
                         <a href="#" class="goods_imga">
                             <img src="https://kaola-pop.oss.kaolacdn.com/b8d7673bcfe2482f8fa2657547484643_800_800.jpg?x-oss-process=image/resize,w_262,h_262/quality,q_90/ignore-error,1" alt="">
@@ -32,8 +40,19 @@
                             <a href="" class="goods_title_a">Adidas阿迪达斯Superstar经典款贝壳头男女运动板鞋小白鞋11111111111111111111111111111</a>
                         </div>
                     </div>
-                </li>
+                </li> -->
             </ul>
+            <div class="paging clear">
+                <!-- <input type="button" class="paging_btn previous_page_btn" value="上一页"> -->
+                <div class="paging_num page m-style">
+                    <!-- <input type="button" class="paging_num_btn paging_btn_hover paging_btn_active" value="1"> -->
+                    <!-- <input type="button" class="paging_num_btn paging_btn_hover" value="8">
+                    <input type="button" class="paging_num_btn paging_btn_hover paging_num_omit" value="...">
+                    
+                    <input type="button" class="paging_num_btn paging_btn_hover" value="10"> -->
+                </div>
+                <!-- <input type="button" class="paging_btn next_page_btn paging_btn_hover" value="下一页"> -->
+            </div>
         </div>
     </div>
 </body>

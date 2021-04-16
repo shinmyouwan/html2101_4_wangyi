@@ -45,9 +45,31 @@ i {
     margin: 0 auto;
     width: 1104px;
     height: 2000px; }
-    .list_centent_bc .list_centent .list_goods {
-      float: left;
-      margin-top: 20px; }
+
+.goods_sort {
+  width: auto;
+  margin: 7px;
+  background-color: #fff;
+  border: #eaeaea 1px solid; }
+  .goods_sort .goods_sort_btn {
+    float: left;
+    width: 65px;
+    height: 36px;
+    position: relative; }
+    .goods_sort .goods_sort_btn input {
+      box-sizing: border-box;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      color: #333333;
+      width: 67px;
+      height: 38px;
+      text-align: center;
+      border: #eaeaea 1px solid;
+      margin: 0; }
+    .goods_sort .goods_sort_btn .goods_sort_btn_act {
+      z-index: 99;
+      border-color: #e31436; }
 
 .li_goods {
   width: 262px;
@@ -96,5 +118,53 @@ i {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
+
+.paging {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .paging .paging_btn_hover {
+    color: #333333; }
+    .paging .paging_btn_hover:hover {
+      border-color: #e31436; }
+  .paging .paging_btn_active {
+    border-color: #e31436; }
+  .paging input {
+    float: left;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    line-height: 30px; }
+  .paging .paging_btn {
+    width: 60px; }
+  .paging .paging_num a, .paging .paging_num span {
+    float: left;
+    height: 30px;
+    width: 30px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-size: 14px;
+    border: #eaeaea 1px solid;
+    margin: 0 3px;
+    text-align: center;
+    font-family: "Helvetica Neue"; }
+  .paging .paging_num a {
+    color: #333333;
+    background-color: transparent; }
+    .paging .paging_num a:hover {
+      color: #e31436;
+      background-color: transparent;
+      border-color: #e31436; }
+  .paging .paging_num span {
+    color: #fff;
+    background-color: #e31436; }
+  .paging .paging_num .prev, .paging .paging_num .next {
+    width: 60px;
+    background-color: #fff;
+    margin: 0 5px;
+    font-weight: normal; }
+    .paging .paging_num .prev:hover, .paging .paging_num .next:hover {
+      background-color: #fff; }
 
 /*# sourceMappingURL=list.css.map */
