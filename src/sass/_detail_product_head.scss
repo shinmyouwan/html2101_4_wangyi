@@ -14,39 +14,170 @@
         width: 400px;
         height: 488px;
         .product_img_box {
-            img {
-                width: 400px;
-                height: 400px;
-            }
-        }
-        .product_simg {
-            
+            width: 400px;
+            height: 400px;
+            border: rgb(238,238,238) 1px solid;
+            position: relative;
         }
     }
+    // 信息框下的数据, 子元素 product_tl product_ct 用于标题和内容
     .product_msg {
         width: 658px;
+        &>div {
+            margin: 26px 0;
+        }
         .product_title {
             font-size: 18px;
             font-weight: bold;
             line-height: 26px;
             color: rgb(51,51,51);
-            margin: 26px;
+        }
+        // 通用样式 设置信息标题的样式和边框
+        .product_tl {
+            width: 85px;
+            box-sizing: border-box;
+            padding: 0 0 0 10px;
+            color: rgb(102,102,102);
+            font-size: 12px;
+            float: left;
         }
         .product_price {
             background-color: rgb(249,249,249);
             box-sizing: border-box;
             height: 76px;
-            padding: 12px;
+            padding: 12px 0;
             border: rgb(221,221,221) dotted;
             border-width: 1px 0px;
             display: flex;
+            .product_ct {
+                font-size: 26px;
+                line-height: 26px;
+                font-weight: bold;
+                color: rgb(227,20,54);
+            }
         }
-        
-        .product_tl {
-            width: 85px;
-            box-sizing: border-box;
-            padding: 0 0 0 10px;
+    }
+}
+
+.product_img_box {
+    position: relative;
+    &>img {
+        float: left;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        pointer-events: none;
+    }
+    .product_img_f {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.150);
+        display: none;
+    }
+    .product_img_hide {
+        position: absolute;
+        left: 430px;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border: rgb(238,238,238) 1px solid;
+        display: none;
+        .product_img_big {
+            width: 800px;
+            height: 800px;
+            position: absolute;
+        }
+    }
+}
+.product_simg {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .product_simg_box {
+        width: 316px;
+        height: 70px;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 2px;
+        img {
+            margin: 0 2px;
+            position: relative;
+            border: transparent 3px solid;
+            &:hover {
+                border-color: rgb(227,20,54);
+            }
+        }
+    }
+    .product_simg_pre, .product_simg_next {
+        display: block;
+        width: 33px;
+        height: 62px;
+        border: rgb(221,221,221) solid 1px;
+        position: relative;
+        .arrow {
+            top: 20px;
+        }
+        &:hover {
+            border-color: rgb(227,20,54);
+            .arrow {
+                border-color: rgb(227,20,54);
+            }
+        }
+    }
+    .product_simg_pre {
+        .arrow {
+            left: 12px;
+            transform: rotate(-135deg);
+        }
+
+    }
+}
+
+.product_number {
+    .product_ct {
+        float: left;
+        height: 22px;
+        border: rgb(204,204,204) 1px solid;
+        a {
             float: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            height: 22px;
+            width: 22px;
+            border: none;
         }
+        .product_number_swi {
+            font-weight: bold;
+        }
+        .product_number_cent {
+            border: rgb(204,204,204) solid;
+            border-width: 0 1px;
+            width: 48px;
+        }
+    }
+}
+.product_buy {
+    input {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .product_buy {
+        width: 156px;
+        height: 50px;
+        border: rgb(227,20,54) solid 2px;
+        background-color: rgb(255,236,237);
+        color: rgb(227,20,54);
+    }
+    .product_cart {
+        width: 180px;
+        height: 50px;
+        border: none;
+        background-color: rgb(227,20,54);
+        color: #fff;
     }
 }

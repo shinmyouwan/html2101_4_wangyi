@@ -39,3 +39,15 @@ i {
     visibility:hidden;
     clear:both;
 }
+.margin_down::before{
+    content: '';
+    display: table;
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+    border: rgb(0,0,0) solid;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+    position: absolute;
+}
