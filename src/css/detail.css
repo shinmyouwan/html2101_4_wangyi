@@ -132,18 +132,22 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .product_simg .product_simg_box {
+  .product_simg .product_simg_hide {
     width: 316px;
     height: 70px;
     overflow: hidden;
     white-space: nowrap;
     margin: 0 2px; }
-    .product_simg .product_simg_box img {
-      margin: 0 2px;
+    .product_simg .product_simg_hide .product_simg_box {
+      position: relative; }
+    .product_simg .product_simg_hide img {
+      margin: 0 5px;
       position: relative;
-      border: transparent 3px solid; }
-      .product_simg .product_simg_box img:hover {
-        border-color: #e31436; }
+      border: transparent 3px solid;
+      width: 64px;
+      height: 64px; }
+    .product_simg .product_simg_hide .product_simg_active {
+      border-color: #e31436; }
   .product_simg .product_simg_pre, .product_simg .product_simg_next {
     display: block;
     width: 33px;
@@ -164,16 +168,17 @@ i {
   float: left;
   height: 22px;
   border: #cccccc 1px solid; }
-  .product_number .product_ct a {
+  .product_number .product_ct a, .product_number .product_ct input {
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    text-align: center;
     height: 22px;
     width: 22px;
     border: none; }
-  .product_number .product_ct .product_number_swi {
+  .product_number .product_ct .product_number_jian, .product_number .product_ct .product_simg_box {
     font-weight: bold; }
   .product_number .product_ct .product_number_cent {
     border: #cccccc solid;

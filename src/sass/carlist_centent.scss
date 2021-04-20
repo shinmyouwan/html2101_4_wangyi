@@ -1,0 +1,151 @@
+.cartlist_centent_bc {
+    background-color: rgb(243,243,243);
+    .cartlist_centent {
+        width: 1090px;
+        margin: 10px auto;
+        height: 100px;
+        background-color: #fff;
+    }
+}
+
+.cartlist_centent {
+    div {
+        box-sizing: border-box;
+    }
+    .cartlist_head {
+        display: flex;
+        border: 1px rgb(234,234,234) solid;
+    }
+    .cartlist_body {
+        border: 1px rgb(234,234,234) solid;
+        margin: 20px 0 35px;
+        .cartlist_row {
+            height: 120px;
+            display: flex;
+            padding: 20px 0;
+            border: rgb(234,234,234) solid;
+            border-width: 0 0 1px;
+            .cartlist_centent_text {
+                width: 300px;
+            }
+        }
+        .cartlist_row_bottom {
+            border-width: 0px;
+        }
+        .cartli_img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .cartli_h_text {
+        color: rgb(153,153,153);
+        font-size: 12px;
+        line-height: 34px;
+    }
+    .cartli_b_text {
+        color: rgb(51,51,51);
+        font-size: 12px;
+    }
+    .cartli_check {
+        padding: 30px 10px 30px 0;
+    }
+    .cartli_check_h {
+        padding: 7px 10px 5px 0;
+    }
+    .carli_price {
+        font-size: 14px;
+    }
+    
+    .cartli_num {
+        float: left;
+        height: 24px;
+        border: rgb(204,204,204) 1px solid;
+        a, input {
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            text-align: center;
+            height: 24px;
+            width: 22px;
+            border: none;
+        }
+        .cartli_number_jian, .cartli_number_jia {
+            font-weight: bold;
+        }
+        .cartli_number_cent {
+            border: rgb(204,204,204) solid;
+            border-width: 0 1px;
+            height: 22px;
+            width: 48px;
+        }
+    }
+    .cartli_1 {
+        width: 134px;
+        padding: 0 10px;
+        // background-color: blue;
+        display: flex;
+    }
+    .cartli_2 {
+        width: 422px;
+        padding: 0 10px;
+        // background-color: red;
+    }
+    .cartli_3 {
+        width: 150px;
+        padding: 0 10px;
+        // background-color: green;
+    }
+    .cartli_4 {
+        width: 147px;
+        padding: 0 10px;
+        // background-color: yellowgreen;
+    }
+    .cartli_5 {
+        width: 128px;
+        padding: 0 10px;
+        // background-color: yellow;
+    }
+    .cartli_6 {
+        width: 107px;
+        padding: 0 10px;
+        // background-color: magenta;
+    }
+}
+
+.cartlist_count {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 60px;
+    border: rgb(204,204,204) solid 1px;
+    padding: 0 0 0 10px;
+    .cartlist_count_check {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        .cartlist_count_text {
+            margin: 0 10px;
+            display: block;
+            width: 30px;
+        }
+        .cartlist_count_text_js {
+            width: 90px;
+        }
+    }
+    .cartli_count_num_cent {
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(227,20,54);
+    }
+    .cartlist_count_btn {
+        margin: 0 0 0 60px;
+        width: 120px;
+        height: 58px;
+        background-color: rgb(227,20,54);
+        color: #fff;
+        border: none;
+        font-size: 18px;
+    }
+}

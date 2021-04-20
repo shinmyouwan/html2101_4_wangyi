@@ -5,9 +5,11 @@ import {
 	modeSwitch,
 	telOutTest,
 	pwOutTest,
-} from "http://10.31.157.37/src/script/login_module.js";
-import { getList } from "http://10.31.157.37/src/script/list_module.js";
-import { getDetail } from "http://10.31.157.37/src/script/detail_module.js";
+} from "./login_module.js";
+import { getList } from "./list_module.js";
+import { getDetail } from "./detail_module.js";
+import { getCartlist } from "./cartlist_module.js";
+import { getIndex } from "./index_module.js";
 
 // 参数之前用的是 ID 选择器, 需要重新修改
 if (document.querySelector("#login")) {
@@ -21,4 +23,8 @@ if (document.querySelector("#login")) {
 	getList();
 } else if (document.querySelector("#detail")) {
 	getDetail();
+} else if (document.querySelector("#cartlist")) {
+	getCartlist();
+} else if (document.querySelector("#index")) {
+	getIndex();
 }

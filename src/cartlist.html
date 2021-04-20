@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车-考拉海购</title>    
+    <script type="module" src="http://10.31.157.37/src/script/main.js" id="cartlist"></script>
+    <link rel="stylesheet" href="http://10.31.157.37/src/css/cartlist.css">
+    <link rel="shortcut icon" href="https://img.alicdn.com/tfs/TB13g4aqXP7gK0jSZFjXXc5aXXa-32-32.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="cartlist_centent_bc margin_down">
+        <div class="cartlist_centent">
+            <p>我的购物车</p>
+            <div class="cartlist_head">
+                <div class="cartli_1">
+                    <div class="cartli_check_h">
+                        <input type="checkbox" checked="checked" class="checkbox all_check">
+                    </div>
+                    <span class="cartli_h_text">全选</span>
+                </div>
+                <div class="cartli_2">
+                    <span class="cartli_h_text">商品信息</span>
+                </div>
+                <div class="cartli_3">
+                    <span class="cartli_h_text">单价(元)</span>
+                </div>
+                <div class="cartli_4">
+                    <span class="cartli_h_text">数量</span>
+                </div>
+                <div class="cartli_5">
+                    <span class="cartli_h_text">金额(元)</span>
+                </div>
+                <div class="cartli_6">
+                    <span class="cartli_h_text cartli_delete">操作</span>
+                </div>
+            </div>
+            <div class="cartlist_body">
+                <div class="cartlist_row" style="display: none;">
+                    <div class="cartli_1">
+                        <div class="cartli_check">
+                            <input type="checkbox" checked="checked" class="checkbox alone_check">
+                        </div>
+                        <a href="#"><img src="https://kaola-pop.oss.kaolacdn.com/a41237db25ca41f3a0ad655505baec2b_800_800.jpg?x-oss-process=image/resize,w_80/quality,q_85" alt="" class="cartli_img"></a>
+                    </div>
+                    <div class="cartli_2">
+                        <a href="" class="cartli_b_text cartlist_centent_text"></a>
+                    </div>
+                    <div class="cartli_3">
+                        <span class="cartli_b_text bold carli_price carli_price_js">0</span>
+                    </div>
+                    <div class="cartli_4">
+                        <div class="cartli_num">
+                            <a href="javascript:void(0);" class="cartli_number_jian">-</a>
+                            <input type="text" class="cartli_number_cent" value="1">
+                            <a href="javascript:void(0);" class="cartli_number_jia">+</a>
+                        </div>
+                    </div>
+                    <div class="cartli_5">
+                        <span class="cartli_b_text bold carli_price carli_total_price">347</span>
+                    </div>
+                    <div class="cartli_6">
+                        <span class="cartli_b_text">删除</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cartlist_count">
+                <div class="cartlist_count_check">
+                    <div class="cartli_check_h">
+                        <input type="checkbox" checked="checked" class="checkbox all_check">
+                    </div>
+                    <span class="cartli_b_text cartlist_count_text">全选</span>
+                    <span class="cartli_b_text cartlist_count_text cartlist_count_text_js">删除选中商品</span>
+                </div>
+                <div class="cartlist_count_num">
+                    <span class="cartli_h_text">总价</span>
+                    <span class="cartli_count_num_cent">¥</span>
+                    <span class="cartli_count_num_cent cartli_count_num_cent_js">0</span>
+                    <input type="button" value="去结算" class="cartlist_count_btn">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+.nav {
+	background-color: rgb(0,0,0);
+}
+.nav_wrap {
+	margin: 0 auto;
+	width: 1090px;
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+	.nav_left {
+		height: 30px;
+	}
+	.nav_right {
+		height: 30px;
+		
+	}
+	.nav_option {
+		display: inline-block;
+		height: 30px;
+		padding: 0 14px;
+		color: rgb(153,153,153);
+		line-height: 28px;
+		position: relative;
+		p {
+			display: inline-block;
+		}
+		.triangle {
+			border-top-color: rgb(153,153,153);
+			top: 14px;
+			right: 1px;
+		}
+		&:hover {
+			color: rgb(255,255,255);
+		}
+	}
+	.nav_drop_option {
+		&:hover {
+			color: rgb(255,30,50);
+			background-color: #fff;
+		}
+		&:hover .nav_drop_menu {
+			display: block;
+		}
+	}
+	.nav_drop_menu {
+		display: none;
+		position: absolute;
+		z-index: 10;
+		top: 30px;
+		left: -10px;
+		border: rgb(237,237,237) solid;
+		background-color: #fff;
+		border-width: 0 1px 1px;
+		padding: 10px 15px 0;
+		a {
+			color: rgb(153,153,153);
+			display: inline-block;
+			word-wrap: normal;
+    		white-space: nowrap;
+		}
+		hr {
+			border: rgb(234,234,234) solid;
+			border-width: 1px 0 0;
+		}
+	}
+	.kaola_phone_option {
+		&:hover .kaola_phone {
+			display: block;
+		}
+	}
+	.kaola_phone {
+		background-color: #fff;
+		display: none;
+		position: absolute;
+		top: 37px;
+		left: -30px;
+		padding: 5px 5px 0;
+		border: rgb(237,237,237) 1px solid;
+		img {
+			width: 116px;
+			height: 116px;
+		}
+		h6 {
+			color: rgb(0,0,0);
+			padding: 4px 0;
+			line-height: 18px;
+		}
+		.arrow {
+			top: -5px;
+			left: 60px;
+			width: 7px;
+			height: 7px;
+			transform: rotate(-45deg);
+			border-color: rgb(237,237,237);
+			background-color: rgb(255,255,255);
+		}
+	}
+}
