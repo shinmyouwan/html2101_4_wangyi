@@ -1,13 +1,19 @@
 .slider_box {
 	background-color: rgb(255,35,55);
+	height: 505px;
 	position: relative;
+	overflow: hidden;
 	.show_img {
 		width: 1920px;
 		height: 505px;
-		margin: 0 auto;
-		position: relative;
+		position: absolute;
+		left: 50%;
+		margin-left: -960px;
+		&:hover .cotl_left,&:hover .cotl_right{
+			display: block;
+		}
 		.cotl_box {
-			width: 80px;
+			width: 60px;
 			position: absolute;
 			top: 420px;
 			left: 600px;
@@ -23,11 +29,43 @@
 				}
 			}
 		}
+		.cotl_left, .cotl_right {
+			display: none;
+			width: 34px;
+			height: 68px;
+			position: absolute;
+			top: 170px;
+			background-color: rgba(3, 3, 3, 0.438);
+			&:hover .arrow {
+				border-color: rgb(255,255,255);
+			}
+			.arrow {
+				position: absolute;
+				top: 24px;
+
+			}
+		}
+		.cotl_left {
+			left: 600px;
+			.arrow {
+				transform: rotate(-135deg);
+				left: 12px;
+			}
+		}
+		.cotl_right {
+			right: 600px;
+		}
 	}
 	.show_img_ul {
 		position: relative;
+		height: 505px;
 		.img_li {
 			position: absolute;
+			opacity: 1;
+			img {
+				width: 1920px;
+				height: 505px;
+			}
 		}
 	}
 	.slider_content {

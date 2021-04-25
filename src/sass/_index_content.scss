@@ -1,0 +1,232 @@
+.index_cent {
+	background-color: rgb(246,246,246);
+	position: relative;
+	.index_cent_wrap {
+		width: 1100px;
+		margin: 0 auto;
+		.content_module {
+			width: 1100px;
+			margin-top: 20px;
+		}
+		.content_hot_module {
+			width: 1100px;
+			margin-top: 20px;
+			.cm_top {
+				border-top: 1px solid rgb(233,233,233);
+				padding-top: 25px;
+				height: 48px;
+				position: relative;
+				.cm_title {
+					display: inline-block;
+					font-weight: bold;
+					margin-right: 20px;
+				}
+				.cm_re_sou {
+					display: inline-block;
+					color: #999;
+					margin-right: 20px;
+				}
+			}
+			
+		}
+		.cont_left {
+			width: 99px;
+			position: absolute;
+			left: 50%;
+			top: 20px;
+			background-color: #fff;
+			margin-left: -665px;
+			border: 1px solid rgb(233,233,233);
+			.cont_l_hot {
+				border: solid rgb(233,233,233);
+				border-width: 1px 0;
+				line-height: 50px;
+				font-weight: bold;
+				padding-left: 10px;
+				&:hover {
+					background-color: rgb(246,246,246);
+					color: #ff1e32;
+				}
+			}
+			.cont_l_li {
+				line-height: 32px;
+				color: rgb(153,153,153);
+				padding-left: 10px;
+				&:hover {
+					background-color: rgb(246,246,246);
+					color: #ff1e32;
+				}
+			}
+		}
+		.cont_right {
+			width: 62px;
+			height: 60px;
+			position: absolute;
+			left: 50%;
+			top: 20px;
+			background-color: #fff;
+			border: 1px solid rgb(233,233,233);
+			margin-left: 565px;
+			.cont_r_li_top {
+				width: 62px;
+				height: 48px;
+				padding-top: 12px;
+				text-align: center;
+				position: relative;
+				border-bottom: 1px solid rgb(233,233,233);
+				.arrow {
+					width: 5px;
+					height: 5px;
+					border-color: rgb(35,35,35);
+					top: 10px;
+					left: 30px;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+}
+.content_hot_module {
+	img {
+		margin: 0 auto;
+		display: block;
+	}
+	.cm_hotbrand_content {
+		.cm_left {
+			width: 217px;
+			height: 355px;
+			border: 1px solid rgb(233,233,233);
+			float: left;
+			background-color: rgb(66,66,66);
+			img {
+				width: 219px;
+				height: 219px;
+			}
+		}
+		.cm_hotbrand_center {
+			float: left;
+			width: 881px;
+			.cm_hotb_ul {
+				background-color: #fff;
+				float: left;
+				height: 177px;
+				border: solid rgb(233,233,233);
+				border-width: 1px 0;
+				display: flex;
+			}
+			.cm_hotb_li {
+				width: 219px;
+				border-right: 1px solid rgb(233,233,233);
+			}
+		}
+	}
+
+}
+.content_module {
+	img {
+		margin: 0 auto;
+		display: block;
+	}
+	.cm_top {
+		border-top: 1px solid rgb(233,233,233);
+		padding-top: 25px;
+		height: 48px;
+		position: relative;
+		.cm_title {
+			display: inline-block;
+			font-weight: bold;
+			margin-right: 20px;
+		}
+		.cm_re_sou {
+			display: inline-block;
+			color: #999;
+			margin-right: 20px;
+		}
+		.cm_small_a {
+			color: rgb(254, 6, 12);
+			margin-right: 15px;
+			font-size: 14px;
+		}
+		.cm_more_btn {
+			position: absolute;
+			right: 0;
+			font-size: 14px;
+			color: rgb(153,153,153);
+		}
+	}
+	.cm_content {
+		border: 1px solid rgb(233,233,233);
+		display: flex;
+		background-color: #fff;
+	}
+	
+	.cm_bottom {
+		margin: 20px 0 45px;
+		height: 216px;
+		border: 1px solid rgb(233,233,233);
+		
+		background-color: #fff;
+		.cm_b_title {
+			font-weight: bold;
+			line-height: 48px;
+			border-bottom: 1px solid rgb(233,233,233);
+		}
+		.cm_b_li {
+			width: 218.8px;
+			height: 167px;
+			border-left: 1px solid rgb(233,233,233);
+			float: left;
+		}
+	}
+}
+.cm_content {
+	.cm_left {
+		width: 330px;
+		height: 542px;
+		color: rgb(240,243,248);
+	}
+	.cm_center {
+		width: 550px;
+		height: 539px;
+		li {
+			float: left;
+			width: 273px;
+			height: 270px;
+			border: solid rgb(233,233,233);
+			border-width: 0 1px 0 0;
+		}
+	}
+	.cm_right {
+		width: 219px;
+		height: 540px;
+		.cm_remai_title {
+			width: 208px;
+			height: 59px;
+			font-weight: bold;
+			line-height: 59px;
+		}
+		.cm_remai_ul {
+			li {
+				padding-top: 27px;
+				padding-right: 14px;
+				width: 205px;
+				height: 92.7px;
+				border-top: 1px solid rgb(233,233,233);
+				
+			}
+		}
+	}
+}
+.footer1 {
+	background-color: rgb(51,51,51);
+}
+.footer2 {
+	background-color: rgb(255,255,255);
+}
+.footer_img {
+	margin: 0 auto;
+	width: 1100px;
+	img {
+		display: block;
+	}
+}
